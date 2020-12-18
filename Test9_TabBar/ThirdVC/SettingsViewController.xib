@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsViewController" customModule="Test9_TabBar" customModuleProvider="target">
+            <connections>
+                <outlet property="loginTextField" destination="47z-UA-JeL" id="Nta-qQ-wgW"/>
+                <outlet property="passwordTextField" destination="5w4-74-VLe" id="7u1-Ag-1Ux"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Логин:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfw-cJ-XFb">
+                    <rect key="frame" x="20" y="104" width="374" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="47z-UA-JeL">
+                    <rect key="frame" x="20" y="154" width="374" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7b-Pa-qcr">
+                    <rect key="frame" x="20" y="228" width="374" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5w4-74-VLe">
+                    <rect key="frame" x="20" y="278" width="374" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kj5-FX-NAj">
+                    <rect key="frame" x="127" y="352" width="160" height="70"/>
+                    <color key="backgroundColor" red="0.37433747523325622" green="0.47587435233160624" blue="0.15952010771894004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="1Z6-R6-uQg"/>
+                        <constraint firstAttribute="height" constant="70" id="tbO-x1-7iy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="Сохранить">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="saveButtonAction:" destination="-1" eventType="touchUpInside" id="qLz-by-lnu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrW-zR-VHY">
+                    <rect key="frame" x="127" y="462" width="160" height="70"/>
+                    <color key="backgroundColor" red="0.37710566510494492" green="0.38072437161210948" blue="0.75455391839378239" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="2UY-mk-eaN"/>
+                        <constraint firstAttribute="width" constant="160" id="mVD-87-bdz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="Показать">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="showAlertButtonAction:" destination="-1" eventType="touchUpInside" id="yXE-6F-NOo"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="47z-UA-JeL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="5Cp-Jc-epH"/>
+                <constraint firstItem="tfw-cJ-XFb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="8NW-8x-Lgx"/>
+                <constraint firstItem="N7b-Pa-qcr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="DEq-Bc-6eM"/>
+                <constraint firstItem="mrW-zR-VHY" firstAttribute="leading" secondItem="kj5-FX-NAj" secondAttribute="leading" id="Dya-rN-juG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5w4-74-VLe" secondAttribute="trailing" constant="20" id="JzD-o4-48L"/>
+                <constraint firstItem="kj5-FX-NAj" firstAttribute="top" secondItem="5w4-74-VLe" secondAttribute="bottom" constant="40" id="P6h-fb-9Fa"/>
+                <constraint firstItem="mrW-zR-VHY" firstAttribute="top" secondItem="kj5-FX-NAj" secondAttribute="bottom" constant="40" id="PEv-dI-Zzl"/>
+                <constraint firstItem="kj5-FX-NAj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Q40-Ub-PqS"/>
+                <constraint firstItem="5w4-74-VLe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="UWk-tq-CA9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="N7b-Pa-qcr" secondAttribute="trailing" constant="20" id="XPE-Es-kIf"/>
+                <constraint firstItem="N7b-Pa-qcr" firstAttribute="top" secondItem="47z-UA-JeL" secondAttribute="bottom" constant="40" id="khL-q5-Pyr"/>
+                <constraint firstItem="47z-UA-JeL" firstAttribute="top" secondItem="tfw-cJ-XFb" secondAttribute="bottom" constant="20" id="ktd-1a-MAf"/>
+                <constraint firstItem="5w4-74-VLe" firstAttribute="top" secondItem="N7b-Pa-qcr" secondAttribute="bottom" constant="20" id="nVq-8R-F3Z"/>
+                <constraint firstItem="tfw-cJ-XFb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="r4J-In-RTC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="47z-UA-JeL" secondAttribute="trailing" constant="20" id="sSq-Zm-OxO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tfw-cJ-XFb" secondAttribute="trailing" constant="20" id="yQD-Ic-B2w"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="100.44642857142857"/>
+        </view>
+    </objects>
+</document>

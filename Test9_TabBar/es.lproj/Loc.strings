@@ -1,0 +1,25 @@
+/* 
+  Loc.strings
+  Test9_TabBar
+
+  Created by user on 16.12.2020.
+  Copyright © 2020 Alina. All rights reserved.
+*/
+
+"year" = "Año";
+"month" = "Mes";
+//"ay" = "Día";
+"time" = "Tiempo";
+
+"January" = "January";
+"February" = "February";
+"March" = "March";
+"April" = "April";
+"May" = "May";
+"June" = "June";
+"July" = "July";
+"August" = "August";
+"September" = "September";
+"October" = "October";
+"November" = "November";
+"December" = "December";
