@@ -6,13 +6,13 @@
 //  Copyright © 2020 Alina. All rights reserved.
 //
 
-import Foundation
-import Alamofire
-import ObjectMapper
-import AlamofireObjectMapper
-import ReactiveKit
-import Bond
-import NVActivityIndicatorView
+//import Foundation
+//import Alamofire
+//import ObjectMapper
+//import AlamofireObjectMapper
+//import ReactiveKit
+//import Bond
+//import NVActivityIndicatorView
 
 //class ViewModel {
 //    

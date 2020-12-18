@@ -6,11 +6,12 @@ target 'Test9_TabBar' do
   use_frameworks!
 
   # Pods for Test9_TabBar
-pod 'Alamofire', '~> 4.9.1'
-pod 'AlamofireObjectMapper', '~> 5.2.1'
-pod 'ObjectMapper'
-pod 'NVActivityIndicatorView'
-pod 'Bond', '~>  7.6.1'
-pod 'ReactiveKit'
-pod 'SDWebImage/MapKit'
+ pod 'Alamofire', '~> 4.9.1'
+ pod 'AlamofireObjectMapper', '~> 5.2.1'
+ pod 'ObjectMapper'
+ pod 'NVActivityIndicatorView'
+ pod 'Bond', '~>  7.6.1'
+ pod 'ReactiveKit'
+ pod 'SDWebImage/MapKit'
+ pod 'CryptoSwift', '~> 1.3.8'
 end

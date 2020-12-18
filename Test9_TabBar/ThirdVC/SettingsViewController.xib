@@ -21,32 +21,32 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Логин:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfw-cJ-XFb">
-                    <rect key="frame" x="20" y="104" width="374" height="30"/>
+                    <rect key="frame" x="20" y="84" width="374" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="47z-UA-JeL">
-                    <rect key="frame" x="20" y="154" width="374" height="34"/>
+                    <rect key="frame" x="20" y="134" width="374" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7b-Pa-qcr">
-                    <rect key="frame" x="20" y="228" width="374" height="30"/>
+                    <rect key="frame" x="20" y="208" width="374" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5w4-74-VLe">
-                    <rect key="frame" x="20" y="278" width="374" height="34"/>
+                    <rect key="frame" x="20" y="258" width="374" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kj5-FX-NAj">
-                    <rect key="frame" x="127" y="352" width="160" height="70"/>
+                    <rect key="frame" x="117" y="332" width="180" height="70"/>
                     <color key="backgroundColor" red="0.37433747523325622" green="0.47587435233160624" blue="0.15952010771894004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="160" id="1Z6-R6-uQg"/>
+                        <constraint firstAttribute="width" constant="180" id="1Z6-R6-uQg"/>
                         <constraint firstAttribute="height" constant="70" id="tbO-x1-7iy"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -61,11 +61,11 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrW-zR-VHY">
-                    <rect key="frame" x="127" y="462" width="160" height="70"/>
+                    <rect key="frame" x="117" y="442" width="180" height="70"/>
                     <color key="backgroundColor" red="0.37710566510494492" green="0.38072437161210948" blue="0.75455391839378239" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="70" id="2UY-mk-eaN"/>
-                        <constraint firstAttribute="width" constant="160" id="mVD-87-bdz"/>
+                        <constraint firstAttribute="width" constant="180" id="mVD-87-bdz"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                     <state key="normal" title="Показать">
@@ -78,11 +78,29 @@
                         <action selector="showAlertButtonAction:" destination="-1" eventType="touchUpInside" id="yXE-6F-NOo"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvc-YR-hvo">
+                    <rect key="frame" x="117" y="552" width="180" height="70"/>
+                    <color key="backgroundColor" red="0.7703205958549223" green="0.17509591196575242" blue="0.20315067234447831" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="Ozt-Lo-11J"/>
+                        <constraint firstAttribute="width" constant="180" id="ref-AE-VSO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="Дешифровать">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="decryptButtonAction:" destination="-1" eventType="touchUpInside" id="AzQ-xb-eV7"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstItem="47z-UA-JeL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="5Cp-Jc-epH"/>
-                <constraint firstItem="tfw-cJ-XFb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="8NW-8x-Lgx"/>
+                <constraint firstItem="tfw-cJ-XFb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="8NW-8x-Lgx"/>
                 <constraint firstItem="N7b-Pa-qcr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="DEq-Bc-6eM"/>
                 <constraint firstItem="mrW-zR-VHY" firstAttribute="leading" secondItem="kj5-FX-NAj" secondAttribute="leading" id="Dya-rN-juG"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5w4-74-VLe" secondAttribute="trailing" constant="20" id="JzD-o4-48L"/>
@@ -91,6 +109,8 @@
                 <constraint firstItem="kj5-FX-NAj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Q40-Ub-PqS"/>
                 <constraint firstItem="5w4-74-VLe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="UWk-tq-CA9"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="N7b-Pa-qcr" secondAttribute="trailing" constant="20" id="XPE-Es-kIf"/>
+                <constraint firstItem="fvc-YR-hvo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ZP0-tf-mOb"/>
+                <constraint firstItem="fvc-YR-hvo" firstAttribute="top" secondItem="mrW-zR-VHY" secondAttribute="bottom" constant="40" id="bY5-Re-c0U"/>
                 <constraint firstItem="N7b-Pa-qcr" firstAttribute="top" secondItem="47z-UA-JeL" secondAttribute="bottom" constant="40" id="khL-q5-Pyr"/>
                 <constraint firstItem="47z-UA-JeL" firstAttribute="top" secondItem="tfw-cJ-XFb" secondAttribute="bottom" constant="20" id="ktd-1a-MAf"/>
                 <constraint firstItem="5w4-74-VLe" firstAttribute="top" secondItem="N7b-Pa-qcr" secondAttribute="bottom" constant="20" id="nVq-8R-F3Z"/>

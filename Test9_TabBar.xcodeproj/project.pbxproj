@@ -3,14 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		977353267E7C8CC501CDCA90 /* Pods_Test9_TabBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459EC1C5311CBD0FB617E625 /* Pods_Test9_TabBar.framework */; };
 		CE368362258C953F008B4F46 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE368361258C953F008B4F46 /* UserSettings.swift */; };
-		CE368364258CAD55008B4F46 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE368363258CAD55008B4F46 /* CommonCrypto.framework */; };
-		CE368365258CAD55008B4F46 /* CommonCrypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE368363258CAD55008B4F46 /* CommonCrypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CE4FEC37258A294B008C65FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4FEC36258A294B008C65FC /* AppDelegate.swift */; };
 		CE4FEC40258A294D008C65FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4FEC3F258A294D008C65FC /* Assets.xcassets */; };
 		CE4FEC43258A294D008C65FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4FEC41258A294D008C65FC /* LaunchScreen.storyboard */; };
@@ -31,20 +29,6 @@
 		CEEE76E9258B5AE800806939 /* CatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE76E8258B5AE800806939 /* CatsViewModel.swift */; };
 		CEEE76EB258B5B1200806939 /* DogsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEE76EA258B5B1200806939 /* DogsViewModel.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		CE368366258CAD55008B4F46 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				CE368365258CAD55008B4F46 /* CommonCrypto.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		328C66D8CD54F65F76F81FCC /* Pods-Test9_TabBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test9_TabBar.debug.xcconfig"; path = "Target Support Files/Pods-Test9_TabBar/Pods-Test9_TabBar.debug.xcconfig"; sourceTree = "<group>"; };
@@ -82,7 +66,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE368364258CAD55008B4F46 /* CommonCrypto.framework in Frameworks */,
 				977353267E7C8CC501CDCA90 /* Pods_Test9_TabBar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,9 +212,7 @@
 				CE4FEC2F258A294B008C65FC /* Sources */,
 				CE4FEC30258A294B008C65FC /* Frameworks */,
 				CE4FEC31258A294B008C65FC /* Resources */,
-				002AAE12560F12C0C7B9B640 /* [CP] Embed Pods Frameworks */,
-				CE368366258CAD55008B4F46 /* Embed Frameworks */,
-				CE368367258CAD7C008B4F46 /* ShellScript */,
+				B0E5663B9E6451CC1F6B90EA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -294,23 +275,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		002AAE12560F12C0C7B9B640 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Test9_TabBar/Pods-Test9_TabBar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Test9_TabBar/Pods-Test9_TabBar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Test9_TabBar/Pods-Test9_TabBar-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2093A6AD260458B05F8AF722 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -333,23 +297,22 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CE368367258CAD7C008B4F46 /* ShellScript */ = {
+		B0E5663B9E6451CC1F6B90EA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Test9_TabBar/Pods-Test9_TabBar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/CommonCrypto.framework",
-			);
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Test9_TabBar/Pods-Test9_TabBar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = "/usr/local/bin/carthage copy-frameworks";
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Test9_TabBar/Pods-Test9_TabBar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -541,7 +504,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ln.lzn.14-icloud.com.Test9-TabBar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -564,7 +527,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ln.lzn.14-icloud.com.Test9-TabBar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

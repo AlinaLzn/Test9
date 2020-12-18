@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import  CryptoSwift
 
 class UserSettings {
     
@@ -14,6 +15,7 @@ class UserSettings {
         case login
         case password
     }
+    
     static var userLogin: String! {
         get {
             return UserDefaults.standard.string(forKey: SettingsKeys.login.rawValue)
@@ -21,8 +23,8 @@ class UserSettings {
         set {
             let defaults = UserDefaults.standard
             let key = SettingsKeys.login.rawValue
-            if let login = newValue {
-                defaults.set(login, forKey: key)
+            if let encryptedLogin = try? newValue.aesEncrypt() {
+            defaults.set(encryptedLogin, forKey: key)
             } else {
                 defaults.removeObject(forKey: key)
             }
@@ -36,8 +38,8 @@ class UserSettings {
         set {
             let defaults = UserDefaults.standard
             let key = SettingsKeys.password.rawValue
-            if let password = newValue {
-                defaults.set(password, forKey: key)
+            if let encryptedPassword = try? newValue.aesEncrypt() {
+            defaults.set(encryptedPassword, forKey: key)
             } else {
                 defaults.removeObject(forKey: key)
             }

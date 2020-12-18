@@ -6,12 +6,12 @@
 //  Copyright © 2020 Alina. All rights reserved.
 //
 
-import Foundation
-import Alamofire
-import ObjectMapper
-import AlamofireObjectMapper
-import ReactiveKit
-import Bond
+//import Foundation
+//import Alamofire
+//import ObjectMapper
+//import AlamofireObjectMapper
+//import ReactiveKit
+//import Bond
 
 //class DogViewModel {
 //    

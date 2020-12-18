@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import CommonCrypto
+import CryptoSwift
 
 class SettingsViewController: UIViewController {
     
@@ -17,19 +17,60 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Settings"
+       
+        loginTextField.text = self.getDatainTextFieldsDecrypt()[0]
+        passwordTextField.text = self.getDatainTextFieldsDecrypt()[1]
     }
     
     @IBAction func saveButtonAction(_ sender: UIButton) {
-        UserSettings.userLogin = loginTextField.text
-        UserSettings.userPassword = passwordTextField.text
+        if loginTextField.text != "", passwordTextField.text != "" {
+            UserSettings.userLogin = loginTextField.text
+            UserSettings.userPassword = passwordTextField.text
+        }
     }
     
     @IBAction func showAlertButtonAction(_ sender: UIButton) {
-        showAlert()
+        showAlert(login: getDatainTextFieldsEncrypt()[0], password: getDatainTextFieldsEncrypt()[1])
     }
     
-    func showAlert() {
-        let alertController = UIAlertController(title: "Сохраненные данные:", message: "Логин: \(UserSettings.userLogin ?? "")  \nПароль: \( UserSettings.userPassword ?? "")", preferredStyle: .alert)
+    @IBAction func decryptButtonAction(_ sender: UIButton) {
+        showAlert(login: getDatainTextFieldsDecrypt()[0], password: getDatainTextFieldsDecrypt()[1])
+    }
+    
+    func getDatainTextFieldsDecrypt() -> [String] {
+        if let labelText = UserSettings.userLogin, let passwordText = UserSettings.userPassword {
+            return [try! labelText.aesDecrypt(), try! passwordText.aesDecrypt()]
+        } else {
+            return ["", ""]
+        }
+    }
+    
+//    func getDatainTextFieldsDecrypt() -> [String] {
+//        var labelText = ""
+//        var passwordText = ""
+//        do {
+//             labelText = try UserSettings.userLogin.aesDecrypt()
+//        } catch  {
+//            labelText = ""
+//        }
+//        do {
+//             passwordText = try UserSettings.userLogin.aesDecrypt()
+//        } catch  {
+//            passwordText = ""
+//        }
+//        return [labelText, passwordText]
+//    }
+    
+    func getDatainTextFieldsEncrypt() -> [String] {
+        if let labelText = UserSettings.userLogin, let passwordText = UserSettings.userPassword {
+            return [try! labelText.aesEncrypt(), try! passwordText.aesEncrypt()]
+        } else {
+            return ["", ""]
+        }
+    }
+    
+    func showAlert(login: String, password: String) {
+        let alertController = UIAlertController(title: "Сохраненные данные:", message: "Логин: \(login)  \nПароль: \(password)", preferredStyle: .alert)
         self.present(alertController, animated: true, completion: nil)
         let actionOk = UIAlertAction(title: "OK", style: .default, handler: { action in
             alertController.dismiss(animated: true, completion: nil) })
