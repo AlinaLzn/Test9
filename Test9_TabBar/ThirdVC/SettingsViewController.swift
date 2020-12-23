@@ -39,34 +39,28 @@ class SettingsViewController: UIViewController {
     
     func getDatainTextFieldsDecrypt() -> [String] {
         if let labelText = UserSettings.userLogin, let passwordText = UserSettings.userPassword {
-            return [try! labelText.aesDecrypt(), try! passwordText.aesDecrypt()]
-        } else {
-            return ["", ""]
+            do {
+                let labText = try labelText.aesDecrypt()
+                let pasText = try passwordText.aesDecrypt()
+                return [labText, pasText]
+            } catch {
+                print("Error!")
+            }
         }
+        return ["", ""]
     }
-    
-//    func getDatainTextFieldsDecrypt() -> [String] {
-//        var labelText = ""
-//        var passwordText = ""
-//        do {
-//             labelText = try UserSettings.userLogin.aesDecrypt()
-//        } catch  {
-//            labelText = ""
-//        }
-//        do {
-//             passwordText = try UserSettings.userLogin.aesDecrypt()
-//        } catch  {
-//            passwordText = ""
-//        }
-//        return [labelText, passwordText]
-//    }
     
     func getDatainTextFieldsEncrypt() -> [String] {
         if let labelText = UserSettings.userLogin, let passwordText = UserSettings.userPassword {
-            return [try! labelText.aesEncrypt(), try! passwordText.aesEncrypt()]
-        } else {
-            return ["", ""]
+            do {
+                let labText = try labelText.aesEncrypt()
+                let pasText = try passwordText.aesEncrypt()
+                return [labText, pasText]
+            } catch {
+                print("Error!")
+            }
         }
+        return ["", ""]
     }
     
     func showAlert(login: String, password: String) {

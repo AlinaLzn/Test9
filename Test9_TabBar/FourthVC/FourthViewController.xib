@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FourthViewController" customModule="Test9_TabBar" customModuleProvider="target">
+            <connections>
+                <outlet property="nameTextField" destination="5TO-Xz-Wd7" id="zCh-2t-uSP"/>
+                <outlet property="passwordTextField" destination="BSa-nC-Aj8" id="PNz-XW-9WK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2M-BW-gsS">
+                    <rect key="frame" x="20" y="84" width="374" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5TO-Xz-Wd7">
+                    <rect key="frame" x="20" y="134" width="374" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAG-rq-Ne9">
+                    <rect key="frame" x="117" y="552" width="180" height="70"/>
+                    <color key="backgroundColor" red="0.38674633987722506" green="0.24391736477967571" blue="0.41953547313959916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="mAr-T8-QQv"/>
+                        <constraint firstAttribute="height" constant="70" id="mkv-bj-gt0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="Дешифровать">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="decryptButtonAction:" destination="-1" eventType="touchUpInside" id="HAQ-Mx-Cn6"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BSa-nC-Aj8">
+                    <rect key="frame" x="20" y="258" width="374" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyR-g9-ZDE">
+                    <rect key="frame" x="117" y="332" width="180" height="70"/>
+                    <color key="backgroundColor" red="1" green="0.7266404544318763" blue="0.20797239716014293" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="DD1-Et-PJh"/>
+                        <constraint firstAttribute="width" constant="180" id="uwU-De-ufT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="Сохранить">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="saveButtonAction:" destination="-1" eventType="touchUpInside" id="fVW-ag-olo"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wY-K1-KOf">
+                    <rect key="frame" x="20" y="208" width="374" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAa-Ib-Cgs">
+                    <rect key="frame" x="117" y="442" width="180" height="70"/>
+                    <color key="backgroundColor" red="0.12266276863829566" green="0.41953547313959916" blue="0.22080454058593033" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="2Ac-w4-ZIM"/>
+                        <constraint firstAttribute="width" constant="180" id="Fv5-cN-qaU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="Показать">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="showAlertButtonAction:" destination="-1" eventType="touchUpInside" id="f72-wX-xrw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="FAa-Ib-Cgs" firstAttribute="leading" secondItem="vyR-g9-ZDE" secondAttribute="leading" id="40p-AW-InR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5TO-Xz-Wd7" secondAttribute="trailing" constant="20" id="5Nb-VO-iDa"/>
+                <constraint firstItem="0wY-K1-KOf" firstAttribute="top" secondItem="5TO-Xz-Wd7" secondAttribute="bottom" constant="40" id="7KK-My-cwd"/>
+                <constraint firstItem="FAa-Ib-Cgs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BG4-qF-91U"/>
+                <constraint firstItem="f2M-BW-gsS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="FRd-vY-06t"/>
+                <constraint firstItem="BSa-nC-Aj8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Hpf-HE-Cve"/>
+                <constraint firstItem="FAa-Ib-Cgs" firstAttribute="top" secondItem="vyR-g9-ZDE" secondAttribute="bottom" constant="40" id="K4V-NL-Hmq"/>
+                <constraint firstItem="f2M-BW-gsS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="McV-6p-DLL"/>
+                <constraint firstItem="sAG-rq-Ne9" firstAttribute="top" secondItem="FAa-Ib-Cgs" secondAttribute="bottom" constant="40" id="Sbh-Jq-6mx"/>
+                <constraint firstItem="sAG-rq-Ne9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="UBx-B5-whW"/>
+                <constraint firstItem="5TO-Xz-Wd7" firstAttribute="top" secondItem="f2M-BW-gsS" secondAttribute="bottom" constant="20" id="V0F-6C-zgJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="f2M-BW-gsS" secondAttribute="trailing" constant="20" id="dUy-Ix-5c2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0wY-K1-KOf" secondAttribute="trailing" constant="20" id="f11-x4-jST"/>
+                <constraint firstItem="vyR-g9-ZDE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iAf-8D-0vE"/>
+                <constraint firstItem="0wY-K1-KOf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="n1P-4i-7jQ"/>
+                <constraint firstItem="vyR-g9-ZDE" firstAttribute="top" secondItem="BSa-nC-Aj8" secondAttribute="bottom" constant="40" id="pCN-OU-2SV"/>
+                <constraint firstItem="BSa-nC-Aj8" firstAttribute="top" secondItem="0wY-K1-KOf" secondAttribute="bottom" constant="20" id="qFh-LG-f9H"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BSa-nC-Aj8" secondAttribute="trailing" constant="20" id="tEb-Gm-yCZ"/>
+                <constraint firstItem="5TO-Xz-Wd7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="wzq-m7-j5l"/>
+            </constraints>
+            <point key="canvasLocation" x="-42" y="47"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -14,4 +14,5 @@ target 'Test9_TabBar' do
  pod 'ReactiveKit'
  pod 'SDWebImage/MapKit'
  pod 'CryptoSwift', '~> 1.3.8'
+ pod 'KeychainSwift', '~> 19.0'
 end

@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		977353267E7C8CC501CDCA90 /* Pods_Test9_TabBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459EC1C5311CBD0FB617E625 /* Pods_Test9_TabBar.framework */; };
+		C78923FB25938EC7001AD069 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78923F925938EC7001AD069 /* FourthViewController.swift */; };
+		C78923FC25938EC7001AD069 /* FourthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C78923FA25938EC7001AD069 /* FourthViewController.xib */; };
 		CE368362258C953F008B4F46 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE368361258C953F008B4F46 /* UserSettings.swift */; };
 		CE4FEC37258A294B008C65FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4FEC36258A294B008C65FC /* AppDelegate.swift */; };
 		CE4FEC40258A294D008C65FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4FEC3F258A294D008C65FC /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 		328C66D8CD54F65F76F81FCC /* Pods-Test9_TabBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test9_TabBar.debug.xcconfig"; path = "Target Support Files/Pods-Test9_TabBar/Pods-Test9_TabBar.debug.xcconfig"; sourceTree = "<group>"; };
 		459EC1C5311CBD0FB617E625 /* Pods_Test9_TabBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test9_TabBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FFBE4D9AEB8DF7E73D000DB /* Pods-Test9_TabBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test9_TabBar.release.xcconfig"; path = "Target Support Files/Pods-Test9_TabBar/Pods-Test9_TabBar.release.xcconfig"; sourceTree = "<group>"; };
+		C78923F925938EC7001AD069 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		C78923FA25938EC7001AD069 /* FourthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourthViewController.xib; sourceTree = "<group>"; };
 		CE368361258C953F008B4F46 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		CE368363258CAD55008B4F46 /* CommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonCrypto.framework; path = Carthage/Build/iOS/CommonCrypto.framework; sourceTree = "<group>"; };
 		CE4FEC33258A294B008C65FC /* Test9_TabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test9_TabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +86,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C78923FE25938ED1001AD069 /* FourthVC */ = {
+			isa = PBXGroup;
+			children = (
+				C78923F925938EC7001AD069 /* FourthViewController.swift */,
+				C78923FA25938EC7001AD069 /* FourthViewController.xib */,
+			);
+			path = FourthVC;
+			sourceTree = "<group>";
+		};
 		CE4FEC2A258A294B008C65FC = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +122,7 @@
 				CE4FEC8E258B36C0008C65FC /* FirstVC */,
 				CE4FEC8F258B36E1008C65FC /* SecondVC */,
 				CE4FEC90258B36F4008C65FC /* ThirdVC */,
+				C78923FE25938ED1001AD069 /* FourthVC */,
 				CEEE76E1258B3AEB00806939 /* Extensions */,
 				CE4FEC3F258A294D008C65FC /* Assets.xcassets */,
 				CE4FEC41258A294D008C65FC /* LaunchScreen.storyboard */,
@@ -267,6 +281,7 @@
 				CE4FEC63258A3B3C008C65FC /* FavoriteViewController.xib in Resources */,
 				CE4FEC6B258A3CC6008C65FC /* Loc.strings in Resources */,
 				CE4FEC67258A3B8E008C65FC /* SettingsViewController.xib in Resources */,
+				C78923FC25938EC7001AD069 /* FourthViewController.xib in Resources */,
 				CE4FEC85258A5A2F008C65FC /* DateViewController.xib in Resources */,
 				CE4FEC40258A294D008C65FC /* Assets.xcassets in Resources */,
 			);
@@ -330,6 +345,7 @@
 				CE4FEC37258A294B008C65FC /* AppDelegate.swift in Sources */,
 				CEE0432F258B604D00ED7E2A /* GlobalConstants.swift in Sources */,
 				CEEE76E5258B59DB00806939 /* DogsImagesModel.swift in Sources */,
+				C78923FB25938EC7001AD069 /* FourthViewController.swift in Sources */,
 				CE4FEC82258A4ECA008C65FC /* DateViewController.swift in Sources */,
 				CEEE76EB258B5B1200806939 /* DogsViewModel.swift in Sources */,
 				CE368362258C953F008B4F46 /* UserSettings.swift in Sources */,

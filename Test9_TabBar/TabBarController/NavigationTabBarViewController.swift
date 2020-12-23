@@ -22,11 +22,15 @@ class NavigationTabBarViewController: UITabBarController, UITabBarControllerDele
         let secondViewController = FavoriteViewController()
         secondViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
         
-        // Create secondTab
+        // Create thirdTab
         let thirdViewController = SettingsViewController()
         thirdViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 2)
+       
+        // Create fourthTab
+        let fourthViewController = FourthViewController()
+        fourthViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 2)
         
-        let tabBarList = [firstViewController, secondViewController, thirdViewController]
+        let tabBarList = [fourthViewController, firstViewController, secondViewController, thirdViewController]
         viewControllers = tabBarList
     }
     
